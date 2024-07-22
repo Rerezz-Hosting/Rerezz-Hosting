@@ -1,4 +1,14 @@
-<a href="https://wa.me/6282312436896">Nama : Xyrezz official</a></p>
-<a href="https://www.youtube.com/@RerezHosting">My Channel</a></p>
-<a href="https://whatsapp.com/channel/0029VacxTsC8F2p5dshCmq3r">Saluran WhatsApp</a></p>
-<a href="https://chat.whatsapp.com/FWYOIAwZqMl09Bh0DJ3uQ5">My Group</a></p>
+     <a
+        href="https://wa.me/6282312436896"
+        class="tile"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <div class="icon" link="https://wa.me/6282312436896">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <p>Whatsapp</p>
+        <div class="tile-share-button">
+          <i class="fa-solid fa-share"></i>
+        </div>
+      </a>
