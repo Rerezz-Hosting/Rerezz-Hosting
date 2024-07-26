@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Contact form to email.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Get in Touch</h2>
+		<form onsubmit="emailSend(); reset(); return false;">
+			<input type="text" id="name" placeholder="name" name="name" required>
+			<input type="text" id="phone" placeholder="phone" name="phone" required>
+			<input type="email" id="email" placeholder="email" name="email" required>
+			<button type="submit" class="btn">submit</button>
+		</form>
+	</div> 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+	<script src="Contact form to email.js"></script>
+</body>
+</html>
