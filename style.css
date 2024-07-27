@@ -1,0 +1,61 @@
+body {
+	background: #222;
+	margin: 20px;
+	font-family: "Roboto", sans-serif;
+}
+.card {
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	padding: 20px;
+	width: 350px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cfilter id='space'%3E%3CfeTurbulence baseFrequency='0.1'%3E%3C/feTurbulence%3E%3CfeColorMatrix values='0.3 -4.8 2.6 -5 -1.5 0.5 3.1 -4.2 1 -4 3.7 -2.4 -0.3 -4 -3.7 -4.4 3.9 -4.9 -0.6 4.7'%3E%3C/feColorMatrix%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23fff'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' filter='url(%23space)'%3E%3C/rect%3E%3C/svg%3E");
+}
+h1 {
+	color: #fff;
+}
+li {
+	/* Default bullets style erased */
+	list-style: none;
+/* 	cursor:pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+li::before {
+	/* Unicode for a bullet or nothing */
+	content: "";
+
+	/* Styles for Indentation*/
+	height: 10px;
+	width: 10px;
+	background: violet;
+	display: inline-block;
+	margin-left: -1em;
+	margin-right: 0.5em;
+	margin-bottom: 1px;
+	border-radius: 50%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cfilter id='filter-cjl800yec'%3E%3CfeTurbulence baseFrequency='0.4' numOctaves='3' seed='1'%3E%3C/feTurbulence%3E%3CfeColorMatrix class='anim' type='hueRotate' values='0'%3E%3Canimate attributeName='values' from='0' to='360' dur='4s' repeatCount='indefinite'%3E%3C/animate%3E%3C/feColorMatrix%3E%3CfeColorMatrix values='-0.5 3.6 0.4 -0.1 2.7 -0.7 0.3 -1.1 1.2 0.4 -4.5 2.4 3.3 -3.7 -1.3 -0.7 -0.4 -4.3 4.3 1.6'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='rgb(178,3,4)' class='bgRect'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' filter='url(%23filter-cjl800yec)'%3E%3C/rect%3E%3C/svg%3E");
+	box-shadow: inset 1px 1px 2px rgba(255, 255, 100, 0.7),
+		0 0 9px rgba(255, 255, 255, 0.2), 0 0 7px rgba(255, 255, 155, 0.5);
+}
+
+li {
+	color: #fff;
+}
+
+li.done {
+	text-decoration: line-through;
+}
+li.done:before {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cfilter id='filter-gdb42amw'%3E%3CfeTurbulence baseFrequency='0.2' numOctaves='5' seed='26' /%3E%3CfeColorMatrix type='hueRotate' values='0'%3E%3Canimate attributeName='values' from='0' to='360' dur='10s' repeatCount='indefinite' /%3E%3C/feColorMatrix%3E%3CfeColorMatrix values='-2.1 4.6 -4.1 2 -3.6 -3.3 -1.2 0.3 1.5 0.3 -1.6 0.8 2.8 3.6 2.8 -0.9 -0.7 4.3 1.2 -0.9'%3E%3C/feColorMatrix%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='rgb(3,10,131)' class='bgRect'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' filter='url(%23filter-gdb42amw)'%3E%3C/rect%3E%3C/svg%3E");
+	box-shadow: inset 1px 1px 2px rgba(0, 0, 100, 0.7),
+		0 0 7px rgba(255, 255, 255, 0.2), 0 0 5px rgba(255, 255, 155, 0.5);
+}
